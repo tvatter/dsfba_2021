@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.81.0" />
+    <meta name="description" content="Website of the course data science for business analytics">
+<meta name="author" content="Thibault Vatter">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>Project :: Data Science for Business Analytics</title>
+    
+    
+    <link href="/dsfba_2021/css/nucleus.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/font-awesome.min.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/hybrid.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/featherlight.min.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/perfect-scrollbar.min.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/auto-complete.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/theme.css?1632158326" rel="stylesheet">
+    <link href="/dsfba_2021/css/hugo-theme.css?1632158326" rel="stylesheet">
+    
+      <link href="/dsfba_2021/css/theme-blue.css?1632158326" rel="stylesheet">
+    
+
+    <script src="/dsfba_2021/js/jquery-2.x.min.js?1632158326"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/dsfba_2021/assignments/project/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<img src="https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/images/hec_logo_white.png" alt="hec_logo_white">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/dsfba_2021/js/lunr.min.js?1632158326"></script>
+<script type="text/javascript" src="/dsfba_2021/js/auto-complete.js?1632158326"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/dsfba_2021';
+    
+</script>
+<script type="text/javascript" src="/dsfba_2021/js/search.js?1632158326"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2021/syllabus/" title="Syllabus" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2021/syllabus/">
+          <b>1. </b>Syllabus
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2021/lectures/" title="Lectures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2021/lectures/">
+          <b>2. </b>Lectures
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2021/assignments/" title="Assignments" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/dsfba_2021/assignments/">
+          <b>3. </b>Assignments
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2021/assignments/project/" title="Project" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/dsfba_2021/assignments/project/">
+          Project
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2021/assignments/hw0/" title="HW0: R Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2021/assignments/hw0/">
+          HW0: R Basics
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dsfba_2021/ressources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/dsfba_2021/ressources/">
+          <b>4. </b>Resources
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> Clear History</a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://tvatter.github.io/dsfba_2021/assignments/project/_index.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/dsfba_2021/'>Data Science for Business Analytics</a> > <a href='/dsfba_2021/assignments/'>Assignments</a> > Project
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#project-milestones">Project Milestones</a></li>
+        <li><a href="#project-proposal">Project proposal</a></li>
+        <li><a href="#project-udpate">Project udpate</a></li>
+        <li><a href="#project-report">Project report</a></li>
+        <li><a href="#project-presentation">Project presentation</a></li>
+      </ul>
+    </li>
+    <li><a href="#submission-instructions">Submission Instructions</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#grading">Grading</a></li>
+    <li><a href="#data-sources--project-ideas">Data sources / project ideas</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Project</h1>
+          
+
+        
+
+
+<p>For this assignment, you will work on a real data science project.
+The goal of the project is to go through the complete data science process to answer questions you have about some topic of your own choosing.
+You will acquire the data, design your visualizations, run statistical analysis, and communicate the results.</p>
+<h3 id="project-milestones">Project Milestones</h3>
+<p>There are a few milestones for your final project.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Date</th>
+<th style="text-align:left">Assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">10/13</td>
+<td style="text-align:left">Project proposal</td>
+</tr>
+<tr>
+<td style="text-align:left">11/10</td>
+<td style="text-align:left">Project update</td>
+</tr>
+<tr>
+<td style="text-align:left">12/15</td>
+<td style="text-align:left">Project Report</td>
+</tr>
+</tbody>
+</table>
+<p>Note that:</p>
+<ul>
+<li>No extensions will be given for any of the project due dates except for medical reasons.</li>
+<li>Projects submitted after the final due date will not be graded.</li>
+</ul>
+<h3 id="project-proposal">Project proposal</h3>
+<p>The proposal should be received by <strong>October 13, 2021</strong>.</p>
+<ul>
+<li>The title can be changed at a later date.</li>
+<li>Each team (or individual if working alone) only needs to submit one proposal.</li>
+<li>At this stage, we reserve the right to reject a project proposal if it is not
+judged satisfactory. But the goal is mostly to set you on a path to succeed!</li>
+</ul>
+<h3 id="project-udpate">Project udpate</h3>
+<p>The update should be received by <strong>November 10, 2021</strong>.</p>
+<ul>
+<li>Make sure that the title is final at this points.</li>
+<li>Each team (or individual if working alone) only needs to submit one update.</li>
+<li>At this stage, we reserve the right to schedule a meeting to provide additional guidance if
+the update is not judged satisfactory.</li>
+</ul>
+<h3 id="project-report">Project report</h3>
+<p>The final report is composed of two parts:</p>
+<ul>
+<li>RMarkdown and compiled HTML files describe the project in details.</li>
+<li>The slides from your presentation.</li>
+</ul>
+<h4 id="rmarkdown-and-compiled-html">RMarkdown and compiled HTML</h4>
+<p>The most important deliverable of your project is the set of RMarkdown and compiled HTML files by <strong>December 15, 2021</strong>.
+They should detail your steps in developing your solution, including how you collected the data, alternative solutions you tried, describing statistical methods you used, and the insights you got.
+Equally important to your final results is how you got there!
+Your RMarkdown and HTML files are the place you describe and document the space of possibilities you explored at each step of your project.
+We strongly advise you to include many visualizations.</p>
+<p>Your RMarkdown should include the following topics.
+Depending on your project type, the amount of discussion you devote to each of them will vary:</p>
+<ul>
+<li>
+<p><strong>Overview and Motivation</strong>: Provide an overview of the project goals and the motivation for it. Consider that this will be read by people who did not see your project proposal.</p>
+</li>
+<li>
+<p><strong>Related Work</strong>: Anything that inspired you, such as a paper, a website, or something we discussed in class.</p>
+</li>
+<li>
+<p><strong>Initial Questions</strong>: What questions are you trying to answer? How did these questions evolve over the course of the project? What new questions did you consider in the course of your analysis?</p>
+</li>
+<li>
+<p><strong>Data</strong>: Source, scraping method, cleanup, etc.</p>
+</li>
+<li>
+<p><strong>Exploratory Analysis</strong>: What visualizations did you use to look at your data in different ways? Justify the decisions you made, and show any major changes to your ideas. How did you reach these conclusions?</p>
+</li>
+<li>
+<p><strong>Modeling</strong>: What are the different statistical methods you considered? Why did you choose a given model?
+How about competing approaches?</p>
+</li>
+<li>
+<p><strong>Final Analysis</strong>: What did you learn about the data? How did you answer the questions? How can you justify your answers?</p>
+</li>
+</ul>
+<p>As this will be your only chance to describe your project in detail, make sure that your RMarkdown file and compiled HTML file are standalone documents that fully describe your process and results.
+For instructions on how to submit, please see <strong>Submission Instructions</strong> below.</p>
+<p>As a side note, the following scale will be used to grade projects:</p>
+<ul>
+<li>Overview, motivation, related work, research questions: 10/100</li>
+<li>Data sources and description: 10/100</li>
+<li>Exploratory data analysis: 35/100</li>
+<li>Answering the research questions and final analysis: 35/100</li>
+<li>Aesthetics, english writing, project organization, code quality: 10/100</li>
+<li>Additionally, you have the opportunity to earn bonuses of up to 20/100 (e.g., by using interactive visualization or presenting your work in especially interesting ways, for instance by complementing your report with a website generated with markdown).</li>
+</ul>
+<h4 id="code">Code</h4>
+<p>We expect you to write high-quality and readable R code in your RMarkdown file.
+You should strive for doing things the right way and think about aspects such as reproducibility, efficiency, cleaning data, etc.
+We also expect you to document your code.</p>
+<h3 id="project-presentation">Project presentation</h3>
+<p>Each team will prepare a <strong>seven minutes video presentation</strong> showing a demo of your project and/or some slides.</p>
+<p>We will <strong>strictly enforce the time limit</strong>, so please make sure you are not running longer.
+Use principles of good storytelling and presentations to get your key points across.
+Focus the majority of your presentation on your main contributions rather than on technical details.
+What do you feel is the best part of your project?
+What insights did you gain?
+What is the single most important thing you would like your audience to take away?
+Make sure it is upfront and center rather than at the end.</p>
+<p>We use the following <a href="https://dept.writing.wisc.edu/wac/the-challenge-of-evaluating-oral-presentations/">criteria to evaluate oral presentations</a>:</p>
+<ul>
+<li>Content (4/20)</li>
+<li>Organization (4/20)</li>
+<li>Teamwork (4/20, project done individually automatically earn the 4 points)</li>
+<li>Visuals (4/20)</li>
+<li>Presentation mechanics (4/20)</li>
+</ul>
+<p>A link with a video should be submitted on <strong>December 15, 2021</strong>, and slides should be submitted by the same day.
+For instructions on how to submit, please see <strong>Submission Instructions</strong> below.</p>
+<h2 id="submission-instructions">Submission Instructions</h2>
+<h4 id="how-to-submit-the-project-proposal-due-october-13-2021">How to submit the project proposal (due October 13, 2021)</h4>
+<p>TBA</p>
+<h4 id="how-to-submit-the-project-udpate-due-november-10-2021">How to submit the project udpate (due November 10, 2021)</h4>
+<p>TBA</p>
+<h4 id="how-to-submit-the-data-rmarkdown-and-compiled-html-files-due-december-15-2021">How to submit the data, RMarkdown and compiled HTML files (due December 15, 2021)</h4>
+<p>TBA</p>
+<h4 id="how-to-submit-the-presentation-slides-and-video-link-due-december-15-2021">How to submit the presentation slides and video link (due December 15, 2021)</h4>
+<p>TBA</p>
+<h2 id="grading">Grading</h2>
+<ul>
+<li>While the project proposal is not part of the grade, it is MANDATORY to proceed.</li>
+<li>The project update, namely HW4, is worth 10% of the overall course grade.</li>
+<li>The report and the presentation represent 60% of the overall course grade:
+<ul>
+<li>50% for your RMarkdown files and the knitted report.
+This includes the quality of your data analysis and R code, the complexity and level
+of difficulty of your project, completeness and overall functionality of your analysis.
+<ul>
+<li>10% for your presentation and the quality of its storytelling aspects.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="data-sources--project-ideas">Data sources / project ideas</h2>
+<ul>
+<li><a href="https://opendatainception.io/">Open Data Inception - 2600+ Open Data Portals Around the World</a></li>
+<li><a href="https://corgis-edu.github.io/corgis/">CORGIS Datasets Project</a></li>
+<li>Governments / NGOs websites like
+<ul>
+<li>US resources
+<ul>
+<li><a href="https://opendata.cityofnewyork.us/">NYC Open Data</a></li>
+<li><a href="https://gss.norc.org/">The General Social Survey</a></li>
+<li><a href="https://www.bls.gov/">US Bureau of Labor Statistics</a></li>
+<li><a href="https://www2.ed.gov/rschstat/landing.jhtml">US Department of Education</a></li>
+<li><a href="https://fred.stlouisfed.org/">Federal Reserve Economic Data</a></li>
+<li><a href="https://www.nass.usda.gov/Quick_Stats/">US Department of Agriculture</a></li>
+</ul>
+</li>
+<li><a href="https://data.worldbank.org/">World Bank Open Data</a></li>
+<li><a href="http://data.un.org/">UN Data</a> and other UNSD databases
+<ul>
+<li><a href="https://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx">Monthly Bulletin of Statistics Online</a></li>
+<li><a href="https://unstats.un.org/sdgs/indicators/database">SDG Indicators</a></li>
+<li><a href="https://comtrade.un.org/">UN Comtrade Database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Other
+<ul>
+<li><a href="https://newsapi.org/">News API</a></li>
+<li><a href="https://www.kaggle.com/">Kaggle</a></li>
+<li><a href="https://towardsdatascience.com/top-10-great-sites-with-free-data-sets-581ac8f6334">10 great sites with free datasets</a></li>
+</ul>
+</li>
+<li>Some project ideas
+<ul>
+<li><a href="https://blog.thedataincubator.com/2016/10/data-science-project-ideas/">Blog of the Data Incubator</a></li>
+<li><a href="https://fivethirtyeight.com/features/damn-we-wish-wed-written-these-11-stories/">FiveThirtyEight 2016 jalous list</a>, <a href="https://fivethirtyeight.com/features/damn-we-wish-wed-written-these-17-stories/">FiveThirtyEight 2019 jalousy list</a></li>
+<li><a href="https://www.quora.com/What-are-some-good-data-science-projects?share=1">First answer to this quora question</a></li>
+</ul>
+</li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tvatter-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/dsfba_2021/assignments/" title="Assignments"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/dsfba_2021/assignments/hw0/" title="HW0: R Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/dsfba_2021/js/clipboard.min.js?1632158326"></script>
+    <script src="/dsfba_2021/js/perfect-scrollbar.min.js?1632158326"></script>
+    <script src="/dsfba_2021/js/perfect-scrollbar.jquery.min.js?1632158326"></script>
+    <script src="/dsfba_2021/js/jquery.sticky.js?1632158326"></script>
+    <script src="/dsfba_2021/js/featherlight.min.js?1632158326"></script>
+    <script src="/dsfba_2021/js/html5shiv-printshiv.min.js?1632158326"></script>
+    <script src="/dsfba_2021/js/highlight.pack.js?1632158326"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/dsfba_2021/js/modernizr.custom.71422.js?1632158326"></script>
+    <script src="/dsfba_2021/js/learn.js?1632158326"></script>
+    <script src="/dsfba_2021/js/hugo-learn.js?1632158326"></script>
+
+    <link href="/dsfba_2021/mermaid/mermaid.css?1632158326" type="text/css" rel="stylesheet" />
+    <script src="/dsfba_2021/mermaid/mermaid.js?1632158326"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  var google_analytics = 'UA-114246735-1';
+  ga('create', google_analytics, 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  </body>
+</html>

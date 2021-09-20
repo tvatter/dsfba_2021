@@ -1,0 +1,35 @@
+baseURL = "https://tvatter.github.io/dsfba_2021"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Data Science for Business Analytics"
+theme = "hugo-theme-learn"
+themesdir = "themes"
+metaDataFormat = "yaml"
+publishDir= "docs"
+defaultContentLanguageInSubdir= false
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+googleAnalytics = "UA-114246735-1"
+disqusShortname = "tvatter-github-io"
+
+[params]
+  editURL = "https://tvatter.github.io/dsfba_2021/"
+  description = "Website of the course data science for business analytics"
+  author = "Thibault Vatter"
+  showVisitedLinks = true
+  themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Data Science for Business Analytics"
+weight = 1
+languageName = "English"
+
+pygmentsUseClassic            = false
+pygmentsCodeFences            = true
+pygmentsCodeFencesGuessSyntax = true

@@ -1,0 +1,372 @@
+---
+title: 'HW0: R Basics'
+author: "Thibault Vatter"
+date: "September 14, 2020"
+
+---
+
+
+
+<div id="r-foundations" class="section level2">
+<h2>R Foundations</h2>
+<p>In this tutorial, you’ll get an overview of the basic programming concepts in R
+and main data types.
+It’s just enough to get you up and running essential R code.
+However, for true “beginners”, we highly recommend going through <a href="http://adv-r.had.co.nz/Data-structures.html">Advanced R - Chapter ‘Foundations’</a> from which the content of this assignment is (mostly) inspired by.</p>
+<div id="r-rstudio-installation" class="section level4">
+<h4>R, RStudio, Installation</h4>
+<ul>
+<li><a href="https://cran.r-project.org/"><strong>R</strong></a> is a programming language for statistical analysis</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/"><strong>RStudio</strong></a> is the integrated development environment (IDE) for R in which we write and execute R code, plot things and write reports.</li>
+<li><a href="http://web.cs.ucla.edu/~gulzar/rstudio/">Installation guidelines and details (Mac, Windows, Linux)</a></li>
+</ul>
+<p>To follow the tutorial, you can start R Studio and execute statements from the code chunks in the R Console.</p>
+</div>
+<div id="libraries" class="section level4">
+<h4>Libraries</h4>
+<p>R uses different libraries or packages to load specific functions (read excel files, talk to Twitter, generate plots).</p>
+<pre class="r"><code># To install package from the console, note the quotation marks!
+# install.packages(&quot;name_of_package&quot;)
+
+# load package in environment
+library(mgcv) </code></pre>
+<div id="ex.-0" class="section level5">
+<h5>Ex. 0</h5>
+<p>As a starting point you can install a package that we’ll extensively use throughout the semester:</p>
+<ul>
+<li><code>tidyverse</code></li>
+</ul>
+</div>
+</div>
+<div id="assignment" class="section level4">
+<h4>Assignment</h4>
+<p>In R, we assign values (numbers, characters, data frames) to objects (vectors, matrices, variables).
+To do so, we use the <code>&lt;-</code> operator:</p>
+<pre class="r"><code># name_of_object &lt;- value
+an_object &lt;- 2
+another_object &lt;- &quot;some string&quot;
+# inspect object&#39;s value
+an_object
+#&gt; [1] 2
+print(another_object)
+#&gt; [1] &quot;some string&quot;</code></pre>
+</div>
+<div id="data-structures" class="section level4">
+<h4>Data Structures</h4>
+<p>R’s base data structures can be organised by their dimensionality (1d, 2d, or nd) and whether they’re homogeneous (all contents must be of the same type) or heterogeneous (the contents can be of different types).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Homogeneous</th>
+<th align="left">Heterogeneous</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1d</td>
+<td align="left">Atomic vector</td>
+<td align="left">List</td>
+</tr>
+<tr class="even">
+<td align="left">2d</td>
+<td align="left">Matrix</td>
+<td align="left">Data frame</td>
+</tr>
+<tr class="odd">
+<td align="left">nd</td>
+<td align="left">Array</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="vectors" class="section level4">
+<h4>Vectors</h4>
+<p>The basic data structure in R is the vector. Vectors can be of two kinds: atomic vectors and lists. They have three common properties:</p>
+<ul>
+<li>Type, <code>typeof()</code>, what it is.</li>
+<li>Length, <code>length()</code>, how many elements it contains.</li>
+<li>Attributes, <code>attributes()</code>, additional arbitrary metadata.</li>
+</ul>
+<p>However, atomic vectors and lists differ in the types of their elements: <strong>all elements</strong> of an atomic vector must be the <strong>same type</strong>, whereas the elements of a list can have different types.</p>
+<p>There are four common types of atomic vectors:</p>
+<ul>
+<li>logical</li>
+<li>integer</li>
+<li>double (often called numeric)</li>
+<li>character</li>
+</ul>
+<p>Atomic vectors are usually created with <code>c()</code>, short for combine:</p>
+<pre class="r"><code>dbl_var &lt;- c(1, 2.5, 4.5)
+# with the L suffix, you get an integer rather than a double
+int_var &lt;- c(1L, 6L, 10L)
+# use TRUE and FALSE (or T and F) to create logical vectors
+log_var &lt;- c(TRUE, FALSE, T, F)
+chr_var &lt;- c(&quot;these are&quot;, &quot;some strings&quot;)
+
+int_var &lt;- c(1L, 6L, 10L)
+typeof(int_var)
+#&gt; [1] &quot;integer&quot;
+
+is.integer(int_var)
+#&gt; [1] TRUE</code></pre>
+</div>
+<div id="lists" class="section level4">
+<h4>Lists</h4>
+<p>List objects can hold elements of any type, including lists. You construct lists by using <code>list()</code> instead of <code>c()</code>:</p>
+<pre class="r"><code>x &lt;- list(1:3, &quot;a&quot;, c(TRUE, FALSE, TRUE), c(2.3, 5.9))
+str(x)
+#&gt; List of 4
+#&gt;  $ : int [1:3] 1 2 3
+#&gt;  $ : chr &quot;a&quot;
+#&gt;  $ : logi [1:3] TRUE FALSE TRUE
+#&gt;  $ : num [1:2] 2.3 5.9</code></pre>
+</div>
+<div id="attributes" class="section level4">
+<h4>Attributes</h4>
+<p>All objects can have arbitrary additional attributes, used to store <strong>metadata</strong> about the object. Attributes can be thought of as a named list (with unique names). They can be accessed individually with <code>attr()</code> or all at once (as a list) with <code>attributes()</code>.</p>
+<pre class="r"><code>y &lt;- 1:10
+attr(y, &quot;my_attribute&quot;) &lt;- &quot;This is a vector&quot;
+
+# inspect the attribute of y
+attr(y, &quot;my_attribute&quot;)
+#&gt; [1] &quot;This is a vector&quot;</code></pre>
+</div>
+<div id="matrices-and-arrays" class="section level4">
+<h4>Matrices and arrays</h4>
+<p>Adding a <code>dim</code> attribute to an atomic vector allows it to behave like a multi-dimensional array. A special case of the array is the matrix, which has two dimensions.
+Matrices and arrays are created with <code>matrix()</code> and <code>array()</code>, or by using the assignment form of <code>dim()</code>:</p>
+<pre class="r"><code># two scalar arguments to specify rows and columns
+a &lt;- matrix(1:6, ncol = 3, nrow = 2)
+# one vector argument to describe all dimensions
+b &lt;- array(1:12, c(2, 3, 2))
+
+# you can also modify an object in place by setting dim()
+c &lt;- 1:6
+dim(c) &lt;- c(3, 2)
+c
+#&gt;      [,1] [,2]
+#&gt; [1,]    1    4
+#&gt; [2,]    2    5
+#&gt; [3,]    3    6</code></pre>
+<p><code>length()</code> and <code>names()</code> have high-dimensional generalisations:</p>
+<ul>
+<li><p><code>length()</code> generalises to <code>nrow()</code> and <code>ncol()</code> for matrices, and <code>dim()</code> for arrays.</p></li>
+<li><p><code>names()</code> generalises to <code>rownames()</code> and <code>colnames()</code> for matrices, and <code>dimnames()</code>, a list of character vectors, for arrays.</p></li>
+</ul>
+<p><code>c()</code> generalises to <code>cbind()</code> and <code>rbind()</code> for matrices, and to <code>abind()</code> (provided by the abind package) for arrays. You can transpose a matrix with <code>t()</code>; the generalised equivalent for arrays is <code>aperm()</code>.</p>
+<p>You can test if an object is a matrix or array using <code>is.matrix()</code> and <code>is.array()</code>, or by looking at the length of the <code>dim()</code>. <code>as.matrix()</code> and <code>as.array()</code> make it easy to turn an existing vector into a matrix or array.</p>
+</div>
+<div id="data-frames" class="section level4">
+<h4>Data frames</h4>
+<p>A data frame is the most common way of storing data in R, and if used systematically makes data analysis easier. Under the hood, a data frame is a <strong>list of equal-length vectors</strong>. This makes it a <strong>2-dimensional</strong> structure, so it shares properties of both the matrix and the list. This means that a data frame has <code>names()</code>, <code>colnames()</code>, and <code>rownames()</code>, although <code>names()</code> and <code>colnames()</code> are the same thing. The <code>length()</code> of a data frame is the length of the underlying list and so is the same as <code>ncol()</code>; <code>nrow()</code> gives the number of rows.</p>
+<pre class="r"><code>df &lt;- data.frame(x = 1:3, y = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;))
+str(df)
+#&gt; &#39;data.frame&#39;:    3 obs. of  2 variables:
+#&gt;  $ x: int  1 2 3
+#&gt;  $ y: chr  &quot;a&quot; &quot;b&quot; &quot;c&quot;</code></pre>
+<p>You can combine data frames using cbind() and rbind():</p>
+<pre class="r"><code>cbind(df, data.frame(z = 3:1))
+#&gt;   x y z
+#&gt; 1 1 a 3
+#&gt; 2 2 b 2
+#&gt; 3 3 c 1</code></pre>
+</div>
+<div id="subsetting-vectors" class="section level4">
+<h4>Subsetting vectors</h4>
+<p>Let’s explore the different types of subsetting with a simple vector, <code>x</code>.</p>
+<pre class="text"><code>x &lt;- c(2, 4, 3, 5)</code></pre>
+<p>Positive integers return elements at the specified positions:</p>
+<pre class="text"><code>x[c(3, 1)]
+#&gt; [1] 3 2</code></pre>
+<p>Duplicated indices yield duplicated values:</p>
+<pre class="text"><code>x[c(1, 1)]
+#&gt; [1] 2 2</code></pre>
+<p>Real numbers are silently truncated to integers:</p>
+<pre class="text"><code>x[c(2, 9)]
+#&gt; [1]  4 NA</code></pre>
+<p>Negative integers omit elements at the specified positions:</p>
+<pre class="text"><code>x[-c(3, 1)]
+#&gt; [1] 4 5</code></pre>
+<p>You can’t mix positive and negative integers in a single subset: <code>x[c(-1, 2)]</code> is not allowed.</p>
+<p>Logical vectors select elements where the corresponding logical value is TRUE. This is
+probably the most useful type of subsetting because you write the expression that creates
+the logical vector:</p>
+<pre class="r"><code>x[c(TRUE, TRUE, FALSE, FALSE)]
+#&gt; [1] 2 4
+
+x[x &gt; 3]
+#&gt; [1] 4 5</code></pre>
+<p>A missing value in the index always yields a missing value in the output:</p>
+<pre class="r"><code>x[c(TRUE, TRUE, NA, FALSE)]
+#&gt; [1]  2  4 NA</code></pre>
+<p>Nothing returns the original vector. This is not useful for vectors but is
+very useful for matrices, data frames, and arrays. It can also be useful in
+conjunction with assignment.</p>
+<pre class="r"><code>x[]
+#&gt; [1] 2 4 3 5</code></pre>
+<p>Zero returns a zero-length vector. This is not something you usually do on
+purpose, but it can be helpful for generating test data.</p>
+<pre class="r"><code>x[0]
+#&gt; numeric(0)</code></pre>
+<p>If the vector is named, you can also use character vectors to return elements with matching names:</p>
+<pre class="r"><code>(y &lt;- setNames(x, letters[1:4]))
+#&gt; a b c d 
+#&gt; 2 4 3 5
+
+y[c(&quot;d&quot;, &quot;c&quot;, &quot;a&quot;)]
+#&gt; d c a 
+#&gt; 5 3 2</code></pre>
+<p>Like integer indices, you can repeat indices:</p>
+<pre class="r"><code>y[c(&quot;a&quot;, &quot;a&quot;, &quot;a&quot;)]
+#&gt; a a a 
+#&gt; 2 2 2</code></pre>
+<p>When subsetting with <code>[</code> names are always matched exactly</p>
+<pre class="r"><code>z &lt;- c(abc = 1, def = 2)
+z[c(&quot;a&quot;, &quot;d&quot;)]
+#&gt; &lt;NA&gt; &lt;NA&gt; 
+#&gt;   NA   NA</code></pre>
+</div>
+<div id="subsetting-lists-matricies-and-data-frames" class="section level4">
+<h4>Subsetting lists, matricies and data frames</h4>
+<p>Subsetting a list works in the same way as subsetting an atomic vector. Using <code>[</code> will always return a list;
+<code>[[</code> and <code>$</code>, as described below, let you pull out the components of the list.</p>
+<p>You can subset higher-dimensional structures in three ways:</p>
+<ul>
+<li>With multiple vectors.</li>
+<li>With a single vector.</li>
+<li>With a matrix.</li>
+</ul>
+<pre class="r"><code>a &lt;- matrix(1:9, nrow = 3)
+colnames(a) &lt;- c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;)
+# multiple vectors
+a[1:2, ]
+#&gt;      A B C
+#&gt; [1,] 1 4 7
+#&gt; [2,] 2 5 8
+
+df &lt;- data.frame(x = 1:3, y = 3:1, z = letters[1:3])
+# selecting by value of certain vector
+df[df$x == 2, ]
+#&gt;   x y z
+#&gt; 2 2 2 b</code></pre>
+</div>
+<div id="importing-data-in-r" class="section level4">
+<h4>Importing data in R</h4>
+<p>The following checklist makes it easier to import data correctly into R:</p>
+<ul>
+<li>The first row is maybe reserved for the header, while the first column is used to identify the sampling unit;</li>
+<li>Avoid names, values or fields with blank spaces, otherwise each word will be interpreted as a separate variable, resulting in errors that are related to the number of elements per line in your data set;</li>
+<li>Short names are preferred over longer names;</li>
+<li>Try to avoid using names that contain symbols such as <code>?</code>, <code>$</code>,<code>%</code>, <code>^</code>, <code>&amp;</code>, <code>*</code>, <code>(</code>, <code>)</code>,<code>-</code>,<code>#</code>, <code>?</code>,<code>,</code>,<code>&lt;</code>,<code>&gt;</code>, <code>/</code>, <code>|</code>, <code>\</code>, <code>[</code> ,<code>]</code> ,<code>{</code>, and <code>}</code>;</li>
+<li>Make sure that any missing values in your data set are indicated with NA.</li>
+</ul>
+<pre class="r"><code>library(readr)
+
+# import data from .txt file
+df &lt;- read_table(
+  &quot;https://s3.amazonaws.com/assets.datacamp.com/blog_assets/test.txt&quot;,
+  col_names = FALSE)
+df
+#&gt; # A tibble: 5 x 3
+#&gt;      X1    X2 X3   
+#&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;
+#&gt; 1     1     6 a    
+#&gt; 2     2     7 b    
+#&gt; 3     3     8 c    
+#&gt; 4     4     9 d    
+#&gt; 5     5    10 e
+
+# import data from .csv file
+df &lt;- read.table(
+  &quot;https://s3.amazonaws.com/assets.datacamp.com/blog_assets/test.csv&quot;,
+  header = TRUE,
+  sep = &quot;,&quot;)</code></pre>
+</div>
+<div id="functions" class="section level4">
+<h4>Functions</h4>
+<p>Standard format for defining a function in R:</p>
+<pre class="r"><code>my_function_name &lt;- function(arg1 = &quot;default&quot;, arg2 = &quot;default&quot;) {
+  
+  # &#39;cat&#39; is used for concatenating strings
+  merged_string &lt;- cat(arg1, arg2) 
+  
+  # if not specified, last evaluated object is returned
+  return(merged_string) 
+  }
+  
+  # call a function elsewhere from code
+  arg1 &lt;- &quot;Hello&quot;
+  arg2 &lt;- &quot;World!&quot;
+  a_greeting &lt;- my_function_name(arg1, arg2)
+#&gt; Hello World!
+  print(a_greeting)
+#&gt; NULL</code></pre>
+<p><a href="https://cran.r-project.org/">CRAN</a> - the curated repository of R packages provides millions of functions that you could use to tackle data. You simply need to install a package, and then call the function from your R code <code>function_name(somearguments)</code>. For example, the package <code>stats</code> helps you in fitting linear models through the function <code>lm()</code>:</p>
+<pre class="r"><code>library(stats)
+
+x &lt;- rnorm(500)
+y &lt;- x*4 + rnorm(500)
+
+lm.fit &lt;- lm(y~x, data = data.frame(x, y))
+
+print(lm.fit)
+#&gt; 
+#&gt; Call:
+#&gt; lm(formula = y ~ x, data = data.frame(x, y))
+#&gt; 
+#&gt; Coefficients:
+#&gt; (Intercept)            x  
+#&gt;    0.002114     3.941450</code></pre>
+<p>How many functions have been used in the example? What does <code>rnorm</code> mean? You can get informed about any R function by using its documentation <code>?function_name</code> or <code>?packageName::function_name</code>.</p>
+</div>
+<div id="cheat-sheets" class="section level4">
+<h4>Cheat sheets</h4>
+<div id="base-r-cheat-sheet" class="section level5">
+<h5>Base R Cheat sheet</h5>
+<p><img src="base_r_cs.png" /></p>
+</div>
+<div id="data-types-cheat-sheet" class="section level5">
+<h5>Data Types Cheat sheet</h5>
+<p><img src="data_types.png" /></p>
+</div>
+</div>
+<div id="try-it-yourself" class="section level3">
+<h3>Try it yourself!</h3>
+<div id="exercise-1" class="section level5">
+<h5>Exercise 1</h5>
+<p>Try to figure out the answers without executing the code. Check your answers in R Studio.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Given the vector: <code>x &lt;- c("ww", "ee", "ff", "uu", "kk")</code>, what will be the output for <code>x[c(2,3)]</code> ?</p></li>
+<li><p>Let <code>a &lt;- c(2, 4, 6, 8)</code> and <code>b &lt;- c(TRUE, FALSE, TRUE, FALSE)</code>, what will be the output for the R expression <code>max(a[b])</code>?</p></li>
+<li><p>Is it possible to apply the function <code>my_function_name</code> using <code>x</code> and <code>a</code> as arguments?</p></li>
+</ol>
+</div>
+<div id="exercise-2" class="section level5">
+<h5>Exercise 2</h5>
+<p>Consider a vector <code>x</code> such that:
+<code>x &lt;- c(1, 3, 4, 7, 11, 18, 29)</code>
+Write an R statement that will return a list <code>X2</code> with components of value:
+x*2, x/2, sqrt(x) and names ‘x*2’, ‘x/2’, ‘sqrt(x)’.</p>
+</div>
+<div id="exercise-3" class="section level5">
+<h5>Exercise 3</h5>
+<p>Read the file <a href="Table0.txt">Table0.txt</a> into an object DS.</p>
+<ol style="list-style-type: lower-alpha">
+<li>What is the data type for the object DS?</li>
+<li>Change the names of the columns to Name, Age, Height, Weight and Sex.</li>
+<li>Change the row names so that they are the same as Name, and remove the variable Name.</li>
+<li>Get the number of rows and columns of the data.</li>
+</ol>
+</div>
+<div id="exercise-4" class="section level5">
+<h5>Exercise 4</h5>
+<ol style="list-style-type: lower-alpha">
+<li>Convert DS from the previous exercise to a data frame DF.</li>
+<li>Add an additional column “zeros” in DF with all elements 0.</li>
+<li>Remove the Weight column from DF.</li>
+</ol>
+</div>
+</div>
+</div>
