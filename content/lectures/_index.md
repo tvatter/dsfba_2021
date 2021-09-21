@@ -8,7 +8,7 @@ In the third column, references are to chapters from [Advanced R (ADVR)](https:/
 
 | Date  | Topic | Reading |
 | :---  | :---  | :---    |
-| 09/22 | Introduction |  |
+| 09/22 | [Introduction](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/01_intro.pdf) |  |
 | 09/29 | Data Structures and Subsetting | ADVR 3+4 |
 | 10/06 | Control Flows and Functions | ADVR 5, 6, 9, 11 |
 | 10/13 | Data Wrangling | R4DS 5, 9-16, 18 |

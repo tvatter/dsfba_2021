@@ -14,7 +14,8 @@ There are a few milestones for your final project.
 | :---  | :---  |
 | 10/13 | Project proposal |
 | 11/10 | Project update |
-| 12/15 | Project Report |
+| 12/15 | Final Report |
+| 12/15 | Video presentation |
 
 Note that:
 
@@ -40,7 +41,7 @@ The update should be received by **November 10, 2021**.
 the update is not judged satisfactory.
 
 
-### Project report
+### Final report
 
 The final report is composed of two parts:
 
@@ -90,7 +91,7 @@ We expect you to write high-quality and readable R code in your RMarkdown file.
 You should strive for doing things the right way and think about aspects such as reproducibility, efficiency, cleaning data, etc. 
 We also expect you to document your code.
 
-### Project presentation
+### Video presentation
 Each team will prepare a **seven minutes video presentation** showing a demo of your project and/or some slides. 
 
 We will **strictly enforce the time limit**, so please make sure you are not running longer. 
@@ -129,13 +130,13 @@ TBA
 
 ## Grading
 
-* While the project proposal is not part of the grade, it is MANDATORY to proceed.
-* The project update, namely HW4, is worth 10% of the overall course grade.
-* The report and the presentation represent 60% of the overall course grade:
-  * 50% for your RMarkdown files and the knitted report. 
+* The project proposal is worth 10% of the overall course grade.
+* The project update is worth 10% of the overall course grade.
+* The report and the presentation represent 80% of the overall course grade:
+  * 60% for your RMarkdown files and the knitted report. 
 	This includes the quality of your data analysis and R code, the complexity and level 
 	of difficulty of your project, completeness and overall functionality of your analysis. 
-	* 10% for your presentation and the quality of its storytelling aspects.
+  * 20% for your presentation and the quality of its storytelling aspects.
 
 ## Data sources / project ideas
 
@@ -162,4 +163,3 @@ TBA
     * [Blog of the Data Incubator](https://blog.thedataincubator.com/2016/10/data-science-project-ideas/)
     * [FiveThirtyEight 2016 jalous list](https://fivethirtyeight.com/features/damn-we-wish-wed-written-these-11-stories/), [FiveThirtyEight 2019 jalousy list](https://fivethirtyeight.com/features/damn-we-wish-wed-written-these-17-stories/)
     * [First answer to this quora question](https://www.quora.com/What-are-some-good-data-science-projects?share=1)
-
