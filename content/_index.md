@@ -7,7 +7,7 @@ title: "Data Science for Business Analytics"
 ## Important information
 
 * **Zoom link:** use [this link](https://columbiauniversity.zoom.us/j/92403282847?pwd=eXVRTXBjSGRMbzVLTzAxZThFL1Z6Zz09) for the lectures/exercise sessions (password is `dsfba_2021`).
-* **Registration link:** use [this link](https://forms.gle/r7XR5g777Ya6YhTU9) to register your group.
+* **Registration link:** use [this link](https://forms.gle/r7XR5g777Ya6YhTU9) to register your group by __OCTOBER 5TH__.
 
 
 ## Aim of the course

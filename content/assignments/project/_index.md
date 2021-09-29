@@ -140,9 +140,18 @@ TBA
 
 ## Data sources / project ideas
 
+* [Google Dataset Search](https://datasetsearch.research.google.com/)
+* [Data is Plural: Google Sheet with 1000+ datasets](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0)
+* [Github Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 * [Open Data Inception - 2600+ Open Data Portals Around the World](https://opendatainception.io/)
+* [data.world](https://data.world/)
+* [Subreddit r/datasets](https://www.reddit.com/r/datasets/)
 * [CORGIS Datasets Project](https://corgis-edu.github.io/corgis/)
 * Governments / NGOs websites like
+    * Switzerland resources
+        * [Office Fédéral de la Statistique](https://www.bfs.admin.ch/bfs/fr/home.html)
+        * [Swiss Open Data](https://opendata.swiss/fr)
+    * [European Data Portal](https://www.europeandataportal.eu/en)
     * US resources
         * [NYC Open Data](https://opendata.cityofnewyork.us/)
         * [The General Social Survey](https://gss.norc.org/)
