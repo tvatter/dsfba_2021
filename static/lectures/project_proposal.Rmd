@@ -1,0 +1,18 @@
+---
+title: "Data Science - Project Proposal"
+author: "Thibault Vatter"
+date: "10/6/2021"
+output: html_document
+---
+
+# Background and motivation
+
+# Project objectives
+
+# Research questions
+
+# Data source
+
+# Data description
+
+# Schedule & timeline

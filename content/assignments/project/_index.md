@@ -31,6 +31,8 @@ The proposal should be received by **October 17, 2021**.
 * At this stage, we reserve the right to reject a project proposal if it is not 
 judged satisfactory. But the goal is mostly to set you on a path to succeed! 
 * [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28)
+* You can use [this template](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/project_proposal.Rmd) and then just copy-paste sections in the form
+  when you are ready.
 
 ### Project udpate
 
