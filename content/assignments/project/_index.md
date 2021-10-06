@@ -12,7 +12,7 @@ There are a few milestones for your final project.
 
 | Date |  Assignment |
 | :---  | :---  |
-| 10/13 | Project proposal |
+| 10/17 | Project proposal |
 | 11/10 | Project update |
 | 12/15 | Final Report |
 | 12/15 | Video presentation |
@@ -24,12 +24,13 @@ Note that:
 
 ### Project proposal
 
-The proposal should be received by **October 13, 2021**.
+The proposal should be received by **October 17, 2021**.
 
 * The title can be changed at a later date. 
 * Each team (or individual if working alone) only needs to submit one proposal. 
 * At this stage, we reserve the right to reject a project proposal if it is not 
 judged satisfactory. But the goal is mostly to set you on a path to succeed! 
+* [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28)
 
 ### Project udpate
 
@@ -115,8 +116,9 @@ For instructions on how to submit, please see **Submission Instructions** below.
 
 ## Submission Instructions
 
-#### How to submit the project proposal (due October 13, 2021)
-TBA
+#### How to submit the project proposal (due October 17, 2021)
+
+* [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28)
 
 #### How to submit the project udpate (due November 10, 2021)
 TBA
