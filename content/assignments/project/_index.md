@@ -10,12 +10,12 @@ You will acquire the data, design your visualizations, run statistical analysis,
 ### Project Milestones
 There are a few milestones for your final project. 
 
-| Date |  Assignment |
-| :---  | :---  |
-| 10/17 | Project proposal |
-| 11/10 | Project update |
-| 12/15 | Final Report |
-| 12/15 | Video presentation |
+| Date |  Assignment | Link to submit |
+| :---  | :---  | :---  |
+| 10/17 | Project proposal | [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28) |
+| 11/10 | Project update | |
+| 12/15 | Final Report | |
+| 12/15 | Video presentation | |
 
 Note that:
 
