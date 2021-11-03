@@ -11,6 +11,6 @@ On this page, you will find information about your assignments.
 | Date |  Assignment | Link to submit |
 | :---  | :---  | :---  |
 | 10/17 | Project proposal | [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28) |
-| 11/10 | Project update | |
+| 11/14 | Project update | [Fill this form](https://forms.gle/DGbDL9RppyShMkgS6) |
 | 12/15 | Final Report | |
 | 12/15 | Video presentation | |
