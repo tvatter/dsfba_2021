@@ -7,9 +7,8 @@ title: "Data Science for Business Analytics"
 ## Important information
 
 * **Zoom link:** use [this link](https://columbiauniversity.zoom.us/j/92403282847?pwd=eXVRTXBjSGRMbzVLTzAxZThFL1Z6Zz09) for the lectures/exercise sessions (password is `dsfba_2021`).
-* **NEXT DEADLINE:** use [this link](https://forms.gle/EWr81qX7evy6VCQ28) to fill your project proposal by __OCTOBER 17TH__.
-   * You can use [this template](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/project_proposal.Rmd) and then just copy-paste sections in the form
-  when you are ready.
+* **NEXT DEADLINE:** use [this link](https://forms.gle/DGbDL9RppyShMkgS6) to fill your project proposal by __NOVEMBER 14TH__.
+   * You can use [this template](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/dsfba_project.zip).
 
 
 ## Aim of the course

@@ -5,6 +5,10 @@
     <link>https://tvatter.github.io/dsfba_2021/lectures/</link>
     <description>Recent content in Lectures on Data Science for Business Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://tvatter.github.io/dsfba_2021/lectures/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    
+	<atom:link href="https://tvatter.github.io/dsfba_2021/lectures/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

@@ -13,7 +13,7 @@ There are a few milestones for your final project.
 | Date |  Assignment | Link to submit |
 | :---  | :---  | :---  |
 | 10/17 | Project proposal | [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28) |
-| 11/10 | Project update | |
+| 11/14 | Project update | [Fill this form](https://forms.gle/DGbDL9RppyShMkgS6) |
 | 12/15 | Final Report | |
 | 12/15 | Video presentation | |
 
@@ -36,13 +36,14 @@ judged satisfactory. But the goal is mostly to set you on a path to succeed!
 
 ### Project udpate
 
-The update should be received by **November 10, 2021**.
+The update should be received by **November 14, 2021**.
 
 * Make sure that the title is final at this points.
 * Each team (or individual if working alone) only needs to submit one update. 
 * At this stage, we reserve the right to schedule a meeting to provide additional guidance if 
 the update is not judged satisfactory.
-
+* [Fill this form](https://forms.gle/DGbDL9RppyShMkgS6)
+* You can use [this template](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/dsfba_project.zip).
 
 ### Final report
 
@@ -122,8 +123,9 @@ For instructions on how to submit, please see **Submission Instructions** below.
 
 * [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28)
 
-#### How to submit the project udpate (due November 10, 2021)
-TBA
+#### How to submit the project udpate (due November 14, 2021)
+
+* [Fill this form](https://forms.gle/DGbDL9RppyShMkgS6)
 
 #### How to submit the data, RMarkdown and compiled HTML files (due December 15, 2021)
 TBA

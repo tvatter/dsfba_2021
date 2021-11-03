@@ -178,3 +178,22 @@ daily %>%
   ungroup() %>%
   filter() %>%
   mutate()
+
+# multiple tables
+
+airports %>% count(faa) %>% filter(n > 1) # primary key
+airports %>% count(name) %>% filter(n > 1) # not a primary key
+airports %>% count(lon, lat) %>% filter(n > 1) # primary key
+
+flights %>% select(year:day, tailnum, origin, dest) %>% left_join(planes)
+flights %>% select(year:day, tailnum, origin, dest) %>% left_join(planes, by = "tailnum")
+
+left_join(x, y, by = c("keyx1" = "keyy1", "keyx2" = "keyy2"))
+
+top_dest <- flights %>%
+  count(dest, sort = TRUE) %>%
+  head(10)
+
+flights %>%
+  anti_join(planes,
+            by = "tailnum")

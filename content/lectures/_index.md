@@ -15,7 +15,7 @@ pre: "<b>2. </b>"
 | 10/13 | [Data wrangling](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/04_wrangling.pdf) | R4DS 5, 9-16, 18 | [Recording](https://columbiauniversity.zoom.us/rec/share/OMyIMfSzY0h9GcbMvrd4fqZVJnNN6B8GoHc2N6pkHZy3wctQko53Ivz0WejqADgj.8WXqAIXx9dhLv6_F), [R script](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/04_wrangling.R) |
 | 10/20 | [Data wrangling](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/04_wrangling.pdf) | R4DS 5, 9-16, 18 | [Recording](https://columbiauniversity.zoom.us/rec/share/oLccJeH1LUYS8v8_PKCzJOmrhQiND4eb5CbJLy6NbQTiDgAEO-60P_7QdCH7TECC.ya2oFTJoKiTw-Xsx), [R script](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/04_wrangling.R) |
 | 10/27 | [Visualization and Communication](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/05_visualization.pdf) | R4DS 3+28, RMD 2 | |
-| 11/03 | Visualization and Communication | R4DS 3+28, RMD 2 | |
+| 11/03 | [RStudio Projects and RMarkdown](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/06_rproj_rmd.pdf) | R4DS 8+27-30, RMD | |
 | 11/10 | Data Wrangling | R4DS 5, 9-16, 18 | |
 | 11/17 | Visualization and Communication | R4DS 3+28, RMD 2 | |
 | 11/24 | Project coaching | |
