@@ -17,7 +17,7 @@ pre: "<b>2. </b>"
 | 10/27 | [Visualization and Communication](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/05_visualization.pdf) | R4DS 3+28, RMD 2 | [Recording](https://columbiauniversity.zoom.us/rec/share/WffAIHbLjwhImqihyhbVl8bAwhczsmqC0RTRaSt-a0bchIAlLn0RvR7-IzuP7z4g.vaUe_5VsmgPCjAM0) |
 | 11/03 | [RStudio Projects and RMarkdown](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/06_rproj_rmd.pdf) | R4DS 8+27-30, RMD | [Recording](https://columbiauniversity.zoom.us/rec/share/l7sQPUdJ_ij3vGlDmsMEgu-ItpRjBnT6jjZbMpIoPG0xcwWLVCj9lTm2LF-6Aexh.SjDKjuvF7mNEmfxJ) |
 | 11/10 | [Data wrangling](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/07_wrangling.pdf) | R4DS 5, 9-16, 18 | [Recording](https://columbiauniversity.zoom.us/rec/share/u5nvvEvW85y5OVoBXyrhb3Dvqut-rxM-ZccRgDoWHbyY1lWMjjAbLwbBS9U9H3HM.sIMev-xvG08nmA_0) |
-| 11/17 | [Visualization and Communication](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/08_visualization.pdf) | R4DS 3+28, RMD 2 | |
+| 11/17 | [Visualization and Communication](https://raw.githubusercontent.com/tvatter/dsfba_2021/master/static/lectures/08_visualization.pdf) | R4DS 3+28, RMD 2 | [Recording](https://columbiauniversity.zoom.us/rec/share/HGZeZqspOShzLIonAC_JixSDTPgrdMdj4dGRPKHqay-MfkAlqlUtblkGB0YOeZ3B.jGzOxGCIileBWpoT) |
 | 11/24 | Project coaching | |
 | 12/01 | Presentations/Dashboards/Interactivity | RMD 4+5, [htmlwidgets](https://www.htmlwidgets.org/) | |
 | 12/08 | Projects Coaching | | |
