@@ -14,8 +14,8 @@ There are a few milestones for your final project.
 | :---  | :---  | :---  |
 | 10/17 | Project proposal | [Fill this form](https://forms.gle/EWr81qX7evy6VCQ28) |
 | 11/14 | Project update | [Fill this form](https://forms.gle/DGbDL9RppyShMkgS6) |
-| 12/15 | Final Report | |
-| 12/15 | Video presentation | |
+| 12/19 | Final Report | [Fill this form](https://forms.gle/gtAn13s71ZsAr5PP8) |
+| 12/19 | Video presentation | [Fill this form](https://forms.gle/gtAn13s71ZsAr5PP8) |
 
 Note that:
 
@@ -53,7 +53,7 @@ The final report is composed of two parts:
 * The slides from your presentation.
 
 #### RMarkdown and compiled HTML
-The most important deliverable of your project is the set of RMarkdown and compiled HTML files by **December 15, 2021**. 
+The most important deliverable of your project is the set of RMarkdown and compiled HTML files by **December 19, 2021**. 
 They should detail your steps in developing your solution, including how you collected the data, alternative solutions you tried, describing statistical methods you used, and the insights you got. 
 Equally important to your final results is how you got there! 
 Your RMarkdown and HTML files are the place you describe and document the space of possibilities you explored at each step of your project. 
@@ -127,12 +127,13 @@ For instructions on how to submit, please see **Submission Instructions** below.
 
 * [Fill this form](https://forms.gle/DGbDL9RppyShMkgS6)
 
-#### How to submit the data, RMarkdown and compiled HTML files (due December 15, 2021)
-TBA
+#### How to submit the data, RMarkdown and compiled HTML files (due December 19, 2021)
 
-#### How to submit the presentation slides and video link (due December 15, 2021)
-TBA 
+* [Fill this form](https://forms.gle/gtAn13s71ZsAr5PP8)
 
+#### How to submit the presentation slides and video link (due December 19, 2021)
+
+* [Fill this form](https://forms.gle/gtAn13s71ZsAr5PP8)
 
 ## Grading
 
